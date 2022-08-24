@@ -1,5 +1,6 @@
 package com.jean.helpdesk.services;
 
+import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,6 +22,11 @@ public class TecnicoService {
 		
 		return obj.orElseThrow(() -> new ObjectNotFounException("Objeto não encontrado! Id: " + id));
 			
+	}
+
+
+	public List<Tecnico> findAll() {
+		return tecnicoRepository.findAll();
 	}
 
 }
