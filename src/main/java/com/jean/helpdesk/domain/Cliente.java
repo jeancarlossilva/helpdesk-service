@@ -1,4 +1,4 @@
-package com.jean.helpdek.domain;
+package com.jean.helpdesk.domain;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -6,7 +6,7 @@ import java.util.List;
 import javax.persistence.Entity;
 import javax.persistence.OneToMany;
 
-import com.jean.helpdek.domain.enums.Perfil;
+import com.jean.helpdesk.domain.enums.Perfil;
 
 @Entity
 public class Cliente extends Pessoa {

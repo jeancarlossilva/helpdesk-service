@@ -1,12 +1,12 @@
-package com.jean.helpdek.domain.enums;
+package com.jean.helpdesk.domain.enums;
 
-public enum Status {
+public enum Prioridade {
 
 	BAIXA(0,"BAIXA"), MEDIA(1,"MEDIA"), ALTA(2,"ALTA");
 	
 	private Integer codigo;
 	private String descricao;
-	private Status(Integer codigo, String descricao) {
+	private Prioridade(Integer codigo, String descricao) {
 		this.codigo = codigo;
 		this.descricao = descricao;
 	}
@@ -17,12 +17,12 @@ public enum Status {
 		return descricao;
 	}
 	
-	public static Status toEnum(Integer cod) {
+	public static Prioridade toEnum(Integer cod) {
 		if(cod == null) {
 			return null;
 		}
 		
-		for(Status p : Status.values()) {
+		for(Prioridade p : Prioridade.values()) {
 			if(cod.equals(p.getCodigo())) {
 				return p;
 			}

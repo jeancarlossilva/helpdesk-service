@@ -1,12 +1,12 @@
-package com.jean.helpdek.domain.enums;
+package com.jean.helpdesk.domain.enums;
 
-public enum Prioridade {
+public enum Perfil {
 
 	ADMIN(0,"ROLE_ADMIN"), CLIENTE(1,"ROLE_CLIENTE"), TECNICO(2,"ROLE_TECNICO");
 	
 	private Integer codigo;
 	private String descricao;
-	private Prioridade(Integer codigo, String descricao) {
+	private Perfil(Integer codigo, String descricao) {
 		this.codigo = codigo;
 		this.descricao = descricao;
 	}
@@ -17,12 +17,12 @@ public enum Prioridade {
 		return descricao;
 	}
 	
-	public static Prioridade toEnum(Integer cod) {
+	public static Perfil toEnum(Integer cod) {
 		if(cod == null) {
 			return null;
 		}
 		
-		for(Prioridade p : Prioridade.values()) {
+		for(Perfil p : Perfil.values()) {
 			if(cod.equals(p.getCodigo())) {
 				return p;
 			}

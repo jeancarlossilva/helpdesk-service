@@ -1,4 +1,4 @@
-package com.jean.helpdek.domain;
+package com.jean.helpdesk.domain;
 
 import java.io.Serializable;
 import java.time.LocalDate;
@@ -17,7 +17,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
-import com.jean.helpdek.domain.enums.Perfil;
+import com.jean.helpdesk.domain.enums.Perfil;
 
 @Entity
 public abstract class Pessoa implements Serializable {

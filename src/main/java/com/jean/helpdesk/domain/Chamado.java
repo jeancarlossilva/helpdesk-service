@@ -1,4 +1,4 @@
-package com.jean.helpdek.domain;
+package com.jean.helpdesk.domain;
 
 import java.io.Serializable;
 import java.time.LocalDate;
@@ -14,8 +14,8 @@ import javax.persistence.ManyToOne;
 import org.hibernate.annotations.ManyToAny;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
-import com.jean.helpdek.domain.enums.Prioridade;
-import com.jean.helpdek.domain.enums.Status;
+import com.jean.helpdesk.domain.enums.Prioridade;
+import com.jean.helpdesk.domain.enums.Status;
 
 @Entity
 public class Chamado implements Serializable {
