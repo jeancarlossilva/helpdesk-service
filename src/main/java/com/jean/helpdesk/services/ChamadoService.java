@@ -1,12 +1,12 @@
 package com.jean.helpdesk.services;
 
+import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.jean.helpdesk.domain.Chamado;
-import com.jean.helpdesk.domain.dtos.ChamadoDTO;
 import com.jean.helpdesk.repositories.ChamadoRepostiroy;
 import com.jean.helpdesk.services.exceptions.ObjectNotFounException;
 
@@ -22,6 +22,11 @@ public class ChamadoService {
 		
 		return obj.orElseThrow(() -> new ObjectNotFounException("Chamado não encontrado! id: " + id));
 		
+	}
+
+
+	public List<Chamado> findAll() {
+		return repostiroy.findAll();
 	}
 	
 	
