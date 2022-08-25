@@ -7,6 +7,7 @@ import javax.persistence.Entity;
 import javax.persistence.OneToMany;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.jean.helpdesk.domain.dtos.ClienteDTO;
 import com.jean.helpdesk.domain.enums.Perfil;
 
 @Entity
@@ -26,6 +27,10 @@ public class Cliente extends Pessoa {
 	public Cliente(Integer id, String nome, String cpf, String email, String senha) {
 		super(id, nome, cpf, email, senha);
 		addPerfi(Perfil.CLIENTE);
+	}
+
+	public Cliente(ClienteDTO clienteDTO) {
+		
 	}
 
 	public List<Chamado> getChamados() {
