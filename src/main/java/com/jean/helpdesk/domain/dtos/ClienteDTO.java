@@ -10,7 +10,6 @@ import javax.validation.constraints.NotNull;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.jean.helpdesk.domain.Cliente;
-import com.jean.helpdesk.domain.Tecnico;
 import com.jean.helpdesk.domain.enums.Perfil;
 
 public class ClienteDTO implements Serializable {

@@ -3,11 +3,7 @@ package com.jean.helpdesk.domain.dtos;
 import java.io.Serializable;
 import java.time.LocalDate;
 
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
+
 import javax.validation.constraints.NotNull;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
